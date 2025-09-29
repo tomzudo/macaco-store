@@ -8,7 +8,7 @@ interface Product {
   name: string;
   description: string;
   price: number;
-  status: string; // Incluído para exibir status
+  status: string; // Incluído para exibir status 
 }
 
 const ProductsPage = () => {

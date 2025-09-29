@@ -12,7 +12,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ message: 'Missing fields' }, { status: 400 });
     }
 
-    // Criando o produto no banco de dados
+    // Cria o produtoo no banco de dados
     const newProduct = await prisma.product.create({
       data: {
         name,
@@ -24,7 +24,7 @@ export async function POST(request: Request) {
       },
     });
 
-    // Retornando a resposta com o produto criado
+    // Retorna a resposta do produto criado
     return NextResponse.json(newProduct, { status: 201 });
   } catch (error: unknown) {
     // Tratamento de erro aprimorado

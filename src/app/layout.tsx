@@ -1,7 +1,7 @@
 import { Inter } from 'next/font/google';
 import "./globals.css";
 import React from "react";
-import { Toaster } from 'react-hot-toast'; // 👈 Importa aqui
+import { Toaster } from 'react-hot-toast'; // 👈 importa aqui essa merda
 
 const inter = Inter({
   variable: '--font-inter',

@@ -26,6 +26,7 @@ const Home = () => {
     fetch('/api/products')
       .then((res) => res.json())
       .then((data) => {
+        console.log('Produtos recebidos pela api', data);
         setProducts(data);
         setLoading(false);
       })
