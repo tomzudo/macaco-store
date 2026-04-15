@@ -1,38 +1,47 @@
-// src/components/ProductCard.tsx
-'use client';
+import React from "react";
 
-import React from 'react';
+interface ProductCardProps {
+  name: string;
+  price: number;
+  image: string;
+}
 
-export default function ProductCard({
-  product,
-  onEdit,
-  onDelete,
-}: {
-  product: { id: number; name: string; description: string; price: number };
-  onEdit: (product: { id: number; name: string; description: string; price: number }) => void;
-  onDelete: (id: number) => void;
-}) {
+const ProductCard = ({ name, price, image }: ProductCardProps) => {
   return (
-    <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition-all flex flex-col justify-between h-full">
-      <div>
-        <h2 className="text-xl font-bold text-gray-800 mb-2">{product.name}</h2>
-        <p className="text-gray-600 mb-4">{product.description}</p>
-        <p className="text-green-600 font-semibold text-lg">R$ {product.price.toFixed(2)}</p>
+    <div className="group rounded-2xl bg-white/80 backdrop-blur-md p-4 shadow-sm hover:shadow-xl transition-all duration-300">
+      
+      {/* IMAGEM */}
+      <div className="overflow-hidden rounded-xl">
+        <img
+          src={image}
+          alt={name}
+          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+        />
       </div>
-      <div className="mt-4 flex gap-2">
-        <button
-          onClick={() => onEdit(product)}
-          className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg text-sm transition"
-        >
-          Editar
-        </button>
-        <button
-          onClick={() => onDelete(product.id)}
-          className="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-lg text-sm transition"
-        >
-          Excluir
-        </button>
+
+      {/* INFO */}
+      <div className="mt-4">
+        <h3 className="text-lg font-semibold text-black">
+          {name}
+        </h3>
+
+        <p className="text-sm text-gray-600">
+          Oversized
+        </p>
+
+        <div className="mt-2 flex items-center justify-between">
+          <span className="text-xl font-bold text-black">
+            R$ {price.toFixed(2)}
+          </span>
+
+          <button className="rounded-full bg-black px-4 py-2 text-sm text-white hover:bg-zinc-800 transition">
+            Comprar
+          </button>
+        </div>
       </div>
+
     </div>
   );
-}
+};
+
+export default ProductCard;

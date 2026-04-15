@@ -1,7 +1,7 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
 import React from "react";
-import { Toaster } from 'react-hot-toast'; // 👈 importa aqui essa merda
+import { Toaster } from 'react-hot-toast';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -9,8 +9,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'macacada store',
-  description: 'E-commerce com Next.js e Tailwind',
+  title: 'Macaco Store',
+  description: 'E-commerce streetwear',
 };
 
 export default function RootLayout({
@@ -20,9 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={`${inter.variable} antialiased`}>
+      <body className={`${inter.variable} antialiased bg-zinc-950`}>
         {children}
-        <Toaster position="top-right" reverseOrder={false} /> {/* 👈 Adiciona aqui */}
+        <Toaster position="top-right" reverseOrder={false} />
       </body>
     </html>
   );

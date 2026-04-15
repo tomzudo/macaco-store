@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 const Header = () => {
   return (
@@ -8,7 +9,15 @@ const Header = () => {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
         {/* LOGO / NOME */}
         <div className="flex items-center gap-3">
-          <div className="h-10 w-10 rounded-full border border-white/20 bg-zinc-800" />
+          <div className="h-20 w-20 rounded-full overflow-hidden">
+            <Image 
+              src="/monkeylogo.jpg" 
+              alt="avatar" 
+              width={40}
+              height={40}
+              className="w-full h-full object-cover"
+            />
+          </div>
           <div>
             <h1 className="text-lg font-bold tracking-wide uppercase">
               Macaco Store
