@@ -8,7 +8,9 @@ interface ProductCardProps {
 
 const ProductCard = ({ name, price, image }: ProductCardProps) => {
   return (
-    <div className="group rounded-2xl bg-white/80 backdrop-blur-md p-4 shadow-sm hover:shadow-xl transition-all duration-300">
+    <div className="group rounded-2xl 
+      backdrop-blur-md 
+      p-4 transition-all duration-300">
       
       {/* IMAGEM */}
       <div className="overflow-hidden rounded-xl">
@@ -21,20 +23,20 @@ const ProductCard = ({ name, price, image }: ProductCardProps) => {
 
       {/* INFO */}
       <div className="mt-4">
-        <h3 className="text-lg font-semibold text-black text-montserrat">
+        <h3 className="text-lg font-semibold text-black">
           {name}
         </h3>
 
-        <p className="text-sm text-gray-600">
-          Oversized
+        <p className="text-sm text-black">
+          Zen Coffee
         </p>
 
         <div className="mt-2 flex items-center justify-between">
-          <span className="text-xl font-weight:normal text-red-500">
+          <span className="text-xl font-normal text-red-600">
             R$ {price.toFixed(2)}
           </span>
 
-          <button className="rounded-full bg-black px-4 py-2 text-sm text-white text-montserrat hover:bg-zinc-800 transition">
+          <button className="rounded-full bg-black/80 px-4 py-2 text-sm text-white hover:bg-black transition">
             Comprar
           </button>
         </div>

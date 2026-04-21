@@ -9,8 +9,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'Macaco Store',
-  description: 'E-commerce streetwear',
+  title: 'Zen Coffee',
+  description: 'E-commerce de café',
 };
 
 export default function RootLayout({

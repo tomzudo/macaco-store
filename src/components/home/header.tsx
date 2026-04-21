@@ -4,50 +4,65 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header className="w-full bg-black text-white border-b border-white/10">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-        <div>
-          <h1 className="text-lg font-bold tracking-wide uppercase text-yellow-500 text-montserrat">
-            Macaco Store
-          </h1>
-          <p className="text-xs text-zinc-400 text-montserrat">
-            Streetwear oldschool
-          </p>
+    <header className="w-full bg-white text-black border-b border-zinc-200">
+      
+      {/* TOP BAR */}
+      <div className="w-full bg-zinc-900 text-white text-xs text-center py-2">
+        Cuidado com golpes! Esse é nosso site oficial ☕
+      </div>
+
+      {/* CONTEÚDO PRINCIPAL */}
+      <div className="mx-auto max-w-7xl px-6 py-6">
+        
+        {/* LINHA 1 */}
+        <div className="flex items-center justify-between">
+          
+          {/* ESQUERDA (vazio pra centralizar logo) */}
+          <div className="w-32" />
+
+          {/* LOGO CENTRAL */}
+          <div className="text-center">
+            <h1 className="text-2xl tracking-[0.3em] font-semibold">
+              ZEN
+            </h1>
+            <p className="text-xs tracking-[0.4em] text-zinc-500">
+              COFFEE
+            </p>
+          </div>
+
+          {/* DIREITA */}
+          <div className="flex items-center gap-6 text-sm">
+            <button className="hover:text-zinc-500 transition">
+              Entrar
+            </button>
+            <button className="hover:text-zinc-500 transition">
+              Carrinho (0)
+            </button>
+            <button className="hover:text-zinc-500 transition">
+              Buscar
+            </button>
+          </div>
         </div>
 
-        {/* MENU DESKTOP */}
-        <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-montserrat">
-          <a href="#" className="transition hover:text-zinc-300">
-            Início
+        {/* MENU */}
+        <nav className="mt-6 flex items-center justify-center gap-10 text-sm tracking-wide">
+          <a href="#" className="hover:text-zinc-500 transition">
+            CAFÉ EM CÁPSULA
           </a>
-          <a href="#" className="transition hover:text-zinc-300">
-            Kits
+          <a href="#" className="hover:text-zinc-500 transition">
+            CAFÉ MOÍDO E GRÃO
           </a>
-          <a href="#" className="transition hover:text-zinc-300">
-            Produtos
+          <a href="#" className="hover:text-zinc-500 transition">
+            KITS
           </a>
-          <a href="#" className="transition hover:text-zinc-300">
-            Contato
+          <a href="#" className="hover:text-zinc-500 transition">
+            ASSINATURA
+          </a>
+          <a href="#" className="hover:text-zinc-500 transition">
+            ACESSÓRIOS
           </a>
         </nav>
 
-        {/* AÇÕES */}
-        <div className="flex items-center gap-3">
-          {/* Placeholder busca */}
-          <button className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-zinc-900 transition hover:bg-zinc-800">
-            <span className="text-sm">⌕</span>
-          </button>
-
-          {/* Placeholder carrinho */}
-          <button className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-zinc-900 transition hover:bg-zinc-800">
-            <span className="text-sm">🛒</span>
-          </button>
-
-          {/* Menu mobile */}
-          <button className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-zinc-900 md:hidden">
-            ☰
-          </button>
-        </div>
       </div>
     </header>
   );

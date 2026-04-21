@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="border-t border-white/10 bg-black text-white">
+    <footer className="border-t border-white/10 bg-[#483215]/50 text-white">
       <div className="mx-auto max-w-7xl px-6 py-12">
         
         <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
@@ -10,10 +10,10 @@ const Footer = () => {
           {/* MARCA */}
           <div>
             <h2 className="text-xl font-bold uppercase tracking-wide">
-              Macaco Store
+              Zen Coffee
             </h2>
             <p className="mt-3 text-sm text-zinc-400">
-              Streetwear oldschool para quem vive atitude.
+              O melhor café para os amantes de café.
             </p>
           </div>
 
@@ -46,7 +46,7 @@ const Footer = () => {
 
         {/* LINHA FINAL */}
         <div className="mt-10 border-t border-white/10 pt-6 text-center text-xs text-zinc-500 text-montserrat">
-          © {new Date().getFullYear()} Macaco Store. Todos os direitos reservados.
+          © {new Date().getFullYear()} Zen Coffee. Todos os direitos reservados.
         </div>
 
       </div>
