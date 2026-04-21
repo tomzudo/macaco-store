@@ -72,7 +72,7 @@ export async function DELETE(request: NextRequest, context: { params: { id: stri
   if (isNaN(parsedId)) {
     return NextResponse.json({ error: "ID inválido" }, { status: 400 });
   }
-
+ 
   try {
   
     await prisma.orderItem.deleteMany({

@@ -38,9 +38,7 @@ const Footer = () => {
               <li><a href="#" className="hover:text-white">WhatsApp</a></li>
             </ul>
           </div>
-
         </div>
-
         <div className="mt-10 border-t border-white/10 pt-6 text-center text-xs text-zinc-500 text-montserrat">
           © {new Date().getFullYear()} Zen Coffee. Todos os direitos reservados.
         </div>

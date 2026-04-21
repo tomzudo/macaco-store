@@ -16,7 +16,7 @@ export async function POST(request: Request) {
         { error: "O ID do usuário e os itens do pedido são obrigatórios" },
         { status: 400 }
       );
-    }
+    } 
 
     console.log("Dados recebidos no pedido:", { userId, items });
 

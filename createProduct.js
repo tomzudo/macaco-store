@@ -17,5 +17,5 @@ async function createProduct() {
         await prisma.$disconnect();  
     }
 }
-
+ 
 createProduct();

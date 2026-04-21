@@ -9,7 +9,7 @@ interface Product {
   price: number;
   status: string;
 }
-
+ 
 const ProductsPage = () => {
   const [products, setProducts] = useState<Product[]>([]);
 

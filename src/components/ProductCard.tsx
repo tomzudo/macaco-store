@@ -5,7 +5,6 @@ interface ProductCardProps {
   price: number;
   image: string;
 }
-
 const ProductCard = ({ name, price, image }: ProductCardProps) => {
   return (
     <div className="group rounded-2xl 

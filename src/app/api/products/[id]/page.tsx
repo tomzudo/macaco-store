@@ -42,5 +42,4 @@ const OrderDetailPage = ({ params }: { params: { id: string } }) => {
     </div>
   );
 };
-
 export default OrderDetailPage;

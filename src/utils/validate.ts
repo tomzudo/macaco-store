@@ -12,4 +12,4 @@ export function validateProductInput(data: ProductInput) {
   }
 
   return null;
-}
+} 
