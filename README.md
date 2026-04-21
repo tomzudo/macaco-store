@@ -1,36 +1,134 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ☕ Zen Coffee
 
-## Getting Started
+Sistema web completo para gerenciamento de produtos de uma loja de café, desenvolvido com foco em boas práticas, organização de código e experiência do usuário.
 
-First, run the development server:
+---
+
+## 📌 Sobre o projeto
+
+O **Zen Coffee** é uma aplicação que simula um sistema administrativo de loja, permitindo o controle de produtos com uma interface moderna e um fluxo de autenticação funcional.
+
+O objetivo principal do projeto não foi complexidade extrema, mas sim consolidar fundamentos importantes como:
+
+* Estruturação de código
+* Separação de responsabilidades
+* Persistência de dados
+* Validações
+* Organização de rotas
+* Boas práticas de frontend e backend
+
+---
+
+## 🚀 Funcionalidades
+
+* 🔐 Sistema de login para administração
+* 📦 Cadastro de produtos
+* 🗑️ Remoção de produtos
+* ✏️ Edição de produtos
+* 🖼️ Upload e exibição de imagens
+* 🧾 Listagem dinâmica de produtos
+* 🎨 Interface moderna e responsiva
+
+---
+
+## 🧱 Tecnologias utilizadas
+
+### Frontend
+
+* React
+* Next.js
+* Tailwind CSS
+
+### Backend
+
+* API Routes (Next.js)
+
+### Outros
+
+* JavaScript / TypeScript
+* Fetch API
+
+---
+
+## 📂 Estrutura do projeto
+
+```bash
+zen-coffee/
+├── public/           # Imagens e assets
+├── src/
+│   ├── app/          # Rotas do Next.js
+│   ├── components/   # Componentes reutilizáveis
+│   ├── services/     # Comunicação com API
+│   └── styles/       # Estilização
+├── package.json
+└── README.md
+```
+
+---
+
+## ⚙️ Como rodar o projeto
+
+### 1. Clonar o repositório
+
+```bash
+git clone https://github.com/tomzudo/Zen-Coffee.git
+```
+
+### 2. Acessar a pasta
+
+```bash
+cd Zen-Coffee
+```
+
+### 3. Instalar dependências
+
+```bash
+npm install
+```
+
+### 4. Rodar o projeto
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 5. Abrir no navegador
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🔐 Acesso administrativo
 
-To learn more about Next.js, take a look at the following resources:
+O sistema possui uma área de login para gerenciamento dos produtos.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+> (Adicione aqui credenciais padrão, se aplicável)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🎯 Objetivo do projeto
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Este projeto foi desenvolvido com foco em evolução prática, visando:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* Aplicar conceitos reais de desenvolvimento web
+* Melhorar organização de código
+* Criar uma base sólida para projetos maiores
+* Simular um ambiente próximo ao mercado
+
+---
+
+## 📈 Melhorias futuras
+
+* Integração com banco de dados real (PostgreSQL / MongoDB)
+* Autenticação mais robusta (JWT / OAuth)
+* Painel administrativo mais completo
+* Upload de imagens otimizado (Cloudinary / AWS S3)
+* Deploy e CI/CD
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Tom**
