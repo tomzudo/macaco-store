@@ -5,7 +5,7 @@ import { useRouter, useParams } from 'next/navigation';
 import toast from 'react-hot-toast';
 
 interface Product {
-  id: string; // 🔥 corrigido (Prisma usa string)
+  id: string;
   name: string;
   description: string;
   price: number;
@@ -26,7 +26,7 @@ export default function EditProduct() {
     const fetchProduct = async () => {
       try {
         const res = await fetch(`/api/products/${id}`, {
-          credentials: 'include', // 🔐 importante
+          credentials: 'include',
         });
 
         if (res.status === 401) {
@@ -57,10 +57,10 @@ export default function EditProduct() {
     }
 
     try {
-      const res = await fetch('/api/products', { // 🔥 padrão do seu backend
+      const res = await fetch('/api/products', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        credentials: 'include', // 🔐 importante
+        credentials: 'include',
         body: JSON.stringify(product),
       });
 
