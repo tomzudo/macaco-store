@@ -6,9 +6,9 @@ Sistema web completo para gerenciamento de produtos de uma loja de café, desenv
 
 ## 📌 Sobre o projeto
 
-O **Zen Coffee** é uma aplicação que simula um sistema administrativo de loja, permitindo o controle de produtos com uma interface moderna e um fluxo de autenticação funcional.
+O **Zen Coffee** é uma aplicação que simula um projeto fullstack de um e-commerce de café, permitindo o controle de produtos com uma interface moderna e um fluxo de autenticação funcional.
 
-O objetivo principal do projeto não foi complexidade extrema, mas sim consolidar fundamentos importantes como:
+O objetivo principal do projeto foi consolidar fundamentos importantes como:
 
 * Estruturação de código
 * Separação de responsabilidades
@@ -19,7 +19,7 @@ O objetivo principal do projeto não foi complexidade extrema, mas sim consolida
 
 ---
 
-## 🚀 Funcionalidades
+## ✔ Funcionalidades
 
 * 🔐 Sistema de login para administração
 * 📦 Cadastro de produtos
@@ -27,26 +27,40 @@ O objetivo principal do projeto não foi complexidade extrema, mas sim consolida
 * ✏️ Edição de produtos
 * 🖼️ Upload e exibição de imagens
 * 🧾 Listagem dinâmica de produtos
+* ⚡ Atualização em tempo real da interface
 * 🎨 Interface moderna e responsiva
+* 📁 Organização modular de componentes e serviços
 
 ---
 
-## 🧱 Tecnologias utilizadas
+## ⛏ Tecnologias utilizadas
 
 ### Frontend
 
 * React
 * Next.js
+* TypeScript
 * Tailwind CSS
 
 ### Backend
 
 * API Routes (Next.js)
+* Node.js
 
-### Outros
+### Banco de Dados / ORM
 
-* JavaScript / TypeScript
-* Fetch API
+* Prisma ORM
+
+### Autenticação e Segurança
+
+* bcryptjs
+
+### Ferramentas e Desenvolvimento
+
+* ESLint
+* PostCSS
+* Autoprefixer
+* npm
 
 ---
 
@@ -54,12 +68,15 @@ O objetivo principal do projeto não foi complexidade extrema, mas sim consolida
 
 ```bash
 zen-coffee/
-├── public/       
+├── public/
 ├── src/
-│   ├── app/     
+│   ├── app/
 │   ├── components/
-│   ├── services/    
-│   └── styles/       
+│   ├── services/
+│   ├── lib/
+│   ├── styles/
+│   └── types/
+├── prisma/
 ├── package.json
 └── README.md
 ```
@@ -71,7 +88,7 @@ zen-coffee/
 ### 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/tomzudo/Zen-Coffee.git
+git clone https://github.com/tom-build/Zen-Coffee.git
 ```
 
 ### 2. Acessar a pasta
@@ -86,13 +103,25 @@ cd Zen-Coffee
 npm install
 ```
 
-### 4. Rodar o projeto
+### 4. Instalar dependências
+
+```bash
+DATABASE_URL=""
+```
+
+### 5. Rodar o projeto
+
+```bash
+npx prisma migrate dev
+```
+
+### 6. Rodar o projeto
 
 ```bash
 npm run dev
 ```
 
-### 5. Abrir no navegador
+### 7. Abrir no navegador
 
 ```
 http://localhost:3000
@@ -104,31 +133,35 @@ http://localhost:3000
 
 O sistema possui uma área de login para gerenciamento dos produtos.
 
-> (Adicione aqui credenciais padrão, se aplicável)
-
 ---
 
 ## 🎯 Objetivo do projeto
 
 Este projeto foi desenvolvido com foco em evolução prática, visando:
 
-* Aplicar conceitos reais de desenvolvimento web
-* Melhorar organização de código
-* Criar uma base sólida para projetos maiores
-* Simular um ambiente próximo ao mercado
+* Desenvolvimento Full Stack moderno 
+* Organização e escalabilidade
+* Criação de interfaces profissionais
+* Integração frontend/backend
+* Estruturação de aplicações com Next.js
+* Utilização de ORM e persistência de dados 
+* Aplicação de boas práticas de código
 
 ---
 
 ## 📈 Melhorias futuras
 
-* Integração com banco de dados real (PostgreSQL / MongoDB)
-* Autenticação mais robusta (JWT / OAuth)
-* Painel administrativo mais completo
-* Upload de imagens otimizado (Cloudinary / AWS S3)
-* Deploy e CI/CD
+* Integração com serviços de upload (Cloudinary / AWS S3)
+* Sistema completo de autenticação JWT
+* Controle de permissões e níveis de acesso
+* Dashboard administrativo avançado
+* Sistema de pedidos
+* Integração com pagamentos
+* Deploy com CI/CD
+* Testes automatizados
 
 ---
 
 ## 👨‍💻 Autor
 
-Desenvolvido por **Tom**
+Desenvolvido por **Erivelton**
